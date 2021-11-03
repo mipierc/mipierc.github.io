@@ -1,10 +1,26 @@
+:root{
+  --primary: #22223b;
+  --bubble: #f2e9e4;
+  --border: #4a4e69;
+  --text: #9a8c98;
+  --textOnLight: #4a4e69;
+}
+
 body {
-background-color: rgba(50, 50, 50, 1);
-color: white;
+background-color: var(--primary);
+color: var(--text);
 }
 
 .name{
-  border: 3px white dotted;
+  border-bottom: 3px var(--border) solid;
+}
+.projects{
+  padding: .75rem 1.5rem 1.75rem 1.5rem;
+  margin: auto;
+  margin-top: .75rem;
+  width: 30%;
+  background-color: var(--bubble);
+  border-radius: 16px;
 }
 
 h1{
@@ -13,8 +29,32 @@ h1{
   font-family: 'Sue Ellen Francisco', cursive;
   font-variant-caps: all-small-caps;
 }
-h2{
+#school{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   font-family: 'Sue Ellen Francisco', cursive;
+}
+#links{
+  display: flex;
+  justify-content: center;
+  color: var(--textOnLight);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 28px;
+  text-decoration: underline;
+}
+a{
+  display: flex;
+  justify-content: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  padding-bottom: .25rem;
+  font-size: 22px;
+  color: var(--textOnLight);
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px var(--text);
+}
+a:active{
+  color: var(--text);
 }
